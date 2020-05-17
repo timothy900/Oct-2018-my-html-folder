@@ -1,0 +1,38 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #318BA3;
+    color: white;
+    font-family: arial;
+    margin: 0;
+}
+
+#top {
+    background: #14ABBD;
+    width: 100%;
+    border-bottom: 2px solid #FFAA00;
+    padding: 0;
+    height: 50%;
+}
+
+#coin {
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+}
+
+button {
+    margin: 10% 35%;
+    padding: 5px;
+    background-color: #FF6000;
+    border: 3px solid #FF3800;
+    color: white;
+    border-radius: 7px;
+    width: 30%;
+    height: 10%;
+    font-size: 300%;
+}
+

@@ -1,0 +1,70 @@
+<html>
+<head><title>finished 2/26/19</title>
+<style>
+button {
+font-family: helvetica;
+color: white;
+background-color: #555555;
+border: none;
+border-radius: 25px;
+padding: 1.5%;
+font-size: 250%;
+transition: 300ms;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)
+}
+.text {
+position: absolute;
+top: 60%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)
+}
+button:hover {
+background-color: white;
+color: #555;
+}
+body {
+transition-duration: 300ms;
+font-family: arial;
+color: white;
+font-size: 1.5em;
+text-align: center;
+}
+</style>
+</head>
+<script>
+var timesClicked = 0;
+
+//function that changes the background color
+function changeBGColor() {
+document.body.style.backgroundColor = getRandomColor()
+document.getElementById(getRandomColor())
+document.getElementById("times").innerHTML = timesClicked + " times changed.";
+timesClicked++;
+}
+
+//makes it so that the background color isn't white when the page is loaded
+window.onload = changeBGColor;
+
+//function that determines new random the background color
+//taken from stack overflow:
+//https://stackoverflow.com/questions/1484506/random-color-generator
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+</script>
+
+<button onclick="changeBGColor()">Random Color</button>
+<p class="text">16,777,216 possible colors.<br>(and a blue outline on the button to annoy you)</p>
+<p id="times"></p>
+</html>

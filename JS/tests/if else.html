@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>if else</title>
+</head>
+<body></body>
+<h1 id="theBox"></h1>
+<script>
+var myAge = 13;
+var minAge = 18;
+var box1 = document.getElementById("theBox").innerHTML;
+
+var age = prompt("Please enter your age:",myAge);
+
+if (myAge === minAge-1){
+box1 = "Please come back in 1 year.";
+} else if (myAge < minAge) {
+minAge -= myAge
+box1 = "Please come back in " + minAge + " years.";
+}else {
+box1 = "Hello.";
+}
+
+</script>
+<body>
+</html>
