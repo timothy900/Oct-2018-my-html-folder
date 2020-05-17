@@ -1,0 +1,47 @@
+body {
+    background-color: #3F5866;
+    color: #F0F0DF;
+    font-family: Roboto;
+    margin: 0;
+}
+
+header {
+    background-color: #2B3A42;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 1em;
+}
+
+.par {
+    border: 3px solid #F0F0DF;
+    background-color: #BDD3DE;
+    width: 60%;
+    margin: auto;
+    margin-top: 6%;
+    padding: 2em;
+    color: #2B3A42;
+}
+
+p {
+    margin: 30px;
+}
+
+img {
+border: 2px solid #F0F0DF;
+width: 80%;
+display: block;
+margin: 5px auto;
+}
+
+a {
+    display: inline;
+}
+
+.time {
+    display: block;
+    color: #0894A1;
+    margin: 5px;
+    margin-left: 15px;
+    margin-top: -25px;
+    font-size: .9em
+}
