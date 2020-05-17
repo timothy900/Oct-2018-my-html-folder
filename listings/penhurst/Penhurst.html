@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Christian May Realty</title>
+<link rel="stylesheet" href="../../external.css">
+<link rel="stylesheet" href="jpg.css">
+<link rel="icon" type="image/png" href="../logo4.png">
+</head>
+
+<body>
+	<header id="main-header">
+		<div class="container">
+			<div class="logo">
+			<br>
+				<img src="../../logo3.png" alt="logo" style="width: 150px">
+			</div> 
+			<br>
+			<h1>CHRISTIAN MAY REALTY</h1>
+			<h4>RENT. SELL. BUY.</h4>
+
+		</div>	
+	</header>
+	
+	<nav id="navbar">
+			<a href="../../index.html">Home</a>
+			<a href="#">About</a>
+			<a href="../../contact.html">Contact</a>
+			<div class="contact">
+				<img src="../../telephone6.png" alt="call" style="width: 25px;">0917-849-1324
+				<img src="../../mail4.png" alt="email" style="width: 27px; padding-top: 5px;">mayrealpropertybroker@gmail.com
+			</div>	
+	</nav>
+	
+	<div class="main">
+	<h3>Penhurst 4D</h3>
+		<div class="listing-images">
+			
+			<div class="wrap">
+			  <div id="arrow-left" class="arrow"></div>
+			  <div id="slider">
+				<div class="slide slide1">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide2">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide3">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide4">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide5">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide6">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+			  </div>
+			  <div id="arrow-right" class="arrow"></div>
+			</div>
+			
+		</div>
+		<div class="listing-info">
+			<h5>Description</h5>
+			<p>Penhurst Parkplace BGC Burgos circle, Lowest price in the area, definitely getting real value for your investment!</p>
+			
+			<ul>
+			<li>Php 15,300,000</li>
+			<li>3 bedroom, 2 bathroom</li>
+			<li>109sqm</li>
+			<li>Parking</li>
+			</ul>
+		</div>
+	</div>
+	
+	<h5>Images</h5>
+	<div class="images2">
+		<img src="../../images/Penhurst/1.jpg">
+		<img src="../../images/Penhurst/2.jpg">
+		<img src="../../images/Penhurst/3.jpg">
+		<img src="../../images/Penhurst/4.jpg">
+		<img src="../../images/Penhurst/5.jpg">
+		<img src="../../images/Penhurst/6.jpg">
+		<img src="../../images/Penhurst/7.jpg">
+	</div>
+	
+	
+	<script>
+			let sliderImages = document.querySelectorAll(".slide"),
+		  arrowLeft = document.querySelector("#arrow-left"),
+		  arrowRight = document.querySelector("#arrow-right"),
+		  current = 0;
+
+		// Clear all images
+		function reset() {
+		  for (let i = 0; i < sliderImages.length; i++) {
+			sliderImages[i].style.display = "none";
+		  }
+		}
+
+		// Init slider
+		function startSlide() {
+		  reset();
+		  sliderImages[0].style.display = "block";
+		}
+
+		// Show prev
+		function slideLeft() {
+		  reset();
+		  sliderImages[current - 1].style.display = "block";
+		  current--;
+		}
+
+		// Show next
+		function slideRight() {
+		  reset();
+		  sliderImages[current + 1].style.display = "block";
+		  current++;
+		}
+
+		// Left arrow click
+		arrowLeft.addEventListener("click", function() {
+		  if (current === 0) {
+			current = sliderImages.length;
+		  }
+		  slideLeft();
+		});
+
+		// Right arrow click
+		arrowRight.addEventListener("click", function() {
+		  if (current === sliderImages.length - 1) {
+			current = -1;
+		  }
+		  slideRight();
+		});
+
+		startSlide();
+	</script>
+	
+	</div>
+	</body>
+	</html>

@@ -1,0 +1,17 @@
+Website plans and format
+
+------------
+
+(home page listing information)
+	price
+	bedroom
+	bathroom
+	parking
+
+
+(more info page)
+description, followed by bullet items
+	price
+	bedroom and bathroom
+	area
+	parking

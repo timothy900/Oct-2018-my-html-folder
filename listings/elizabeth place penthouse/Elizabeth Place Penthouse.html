@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Christian May Realty</title>
+<link rel="stylesheet" href="../../external.css">
+<link rel="stylesheet" href="jpg.css">
+<link rel="icon" type="image/png" href="../logo4.png">
+</head>
+
+<body>
+	<header id="main-header">
+		<div class="container">
+			<div class="logo">
+			<br>
+				<img src="../../logo3.png" alt="logo" style="width: 150px">
+			</div> 
+			<br>
+			<h1>CHRISTIAN MAY REALTY</h1>
+			<h4>RENT. SELL. BUY.</h4>
+
+		</div>	
+	</header>
+	
+	<nav id="navbar">
+			<a href="../../index.html">Home</a>
+			<a href="#">About</a>
+			<a href="../../contact.html">Contact</a>
+			<div class="contact">
+				<img src="../../telephone6.png" alt="call" style="width: 25px;">0917-849-1324
+				<img src="../../mail4.png" alt="email" style="width: 27px; padding-top: 5px;">mayrealpropertybroker@gmail.com
+			</div>	
+	</nav>
+	
+	<div class="main">
+	<h3>Elizabeth Place Penthouse</h3>
+		<div class="listing-images">
+			
+			<div class="wrap">
+			  <div id="arrow-left" class="arrow"></div>
+			  <div id="slider">
+				<div class="slide slide1">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide2">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide3">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide4">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide5">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide6">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide7">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide8">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>	
+				<div class="slide slide9">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide10">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				<div class="slide slide11">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>
+				  <div class="slide slide12">
+				  <div class="slide-content">
+					<span></span>
+				  </div>
+				</div>		
+			  </div>
+			  <div id="arrow-right" class="arrow"></div>
+			</div>
+			
+		</div>
+		<div class="listing-info">
+			<h5>Description</h5>
+			<p>Penthouse with Spectacular view of Makati skyline</p>
+			
+			<ul>
+			<li>SALE Php 35,900,000</li>
+			<li>3 bedrooms all with Balcony, 3 bathroom</li>
+			<li>Elizabeth Place H.V Dela Costa Salcedo Village Makati City.</li>
+			<li>Three level Penthouse with spectacular view of Makati skyline from Balcony.</li>
+			<li>Narra flooring Jacuzzi, Sauna, Den, Walk in closet, Maid and Parking</li>
+			</ul>
+		</div>
+	</div>
+	
+	<h5>Images</h5>
+	<div class="images2">
+		<img src="../../images/Elizabeth Place Penthouse/1.jpg">
+		<img src="../../images/Elizabeth Place Penthouse/2.jpg">
+		<img src="../../images/Elizabeth Place Penthouse/3.jpg">
+		<img src="../../images/Elizabeth Place Penthouse/4.jpg">
+		<img src="../../images/Elizabeth Place Penthouse/5.jpg">
+		<img src="../../images/Elizabeth Place Penthouse/6.jpg">
+		<img src="../../images/Elizabeth Place Penthouse/7.jpg">
+		<img src="../../images/Elizabeth Place Penthouse/8.jpg">
+		<img src="../../images/Elizabeth Place Penthouse/9.jpg">
+		<img src="../../images/Elizabeth Place Penthouse/10.jpg">
+		<img src="../../images/Elizabeth Place Penthouse/11.jpg">
+		<img src="../../images/Elizabeth Place Penthouse/12.jpg">
+	</div>
+	
+	
+	<script>
+			let sliderImages = document.querySelectorAll(".slide"),
+		  arrowLeft = document.querySelector("#arrow-left"),
+		  arrowRight = document.querySelector("#arrow-right"),
+		  current = 0;
+
+		// Clear all images
+		function reset() {
+		  for (let i = 0; i < sliderImages.length; i++) {
+			sliderImages[i].style.display = "none";
+		  }
+		}
+
+		// Init slider
+		function startSlide() {
+		  reset();
+		  sliderImages[0].style.display = "block";
+		}
+
+		// Show prev
+		function slideLeft() {
+		  reset();
+		  sliderImages[current - 1].style.display = "block";
+		  current--;
+		}
+
+		// Show next
+		function slideRight() {
+		  reset();
+		  sliderImages[current + 1].style.display = "block";
+		  current++;
+		}
+
+		// Left arrow click
+		arrowLeft.addEventListener("click", function() {
+		  if (current === 0) {
+			current = sliderImages.length;
+		  }
+		  slideLeft();
+		});
+
+		// Right arrow click
+		arrowRight.addEventListener("click", function() {
+		  if (current === sliderImages.length - 1) {
+			current = -1;
+		  }
+		  slideRight();
+		});
+
+		startSlide();
+	</script>
+	
+	</div>
+	</body>
+	</html>
